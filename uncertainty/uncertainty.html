@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="uncertainty.css"/>
+        <title>不確定度計算機</title>
+    </head>
+    <body onload="changeMode()">
+        
+    <script src="A_uncertainty.js"></script>
+    <br/>
+    <br/>
+    <br/>
+    <div style="display: flex; flex-direction: column; align-items: center; ">
+    <div>
+        A類不確定度計算
+    </div>
+    <div style="display: flex; justify-content: center;">
+            
+        
+        <textarea  cols="40" rows="10" class="input" aria-label="Data" placeholder="" id="data" style="width: 100%;"></textarea>
+        <br/></div>
+        <div class="select_A">
+            <input type="button" onclick="changeMode()" value="變更模式"/>
+            <input type="button" onclick="getDataA()" value="計算"/>
+            <br/>
+            <div id="output"></div>
+        </div>
+            
+        
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <script src="B_uncertainty.js"></script>
+    <div style="display: flex; flex-direction: column; align-items: center; ">
+        <div>B類不確定度計算</div>
+        <div style="display: flex; justify-content: center;">
+            
+        
+        <textarea  cols="40" rows="10" class="input" aria-label="Data" placeholder="請輸入最小刻度" id="data_B" style="width: 100%;"></textarea>
+        <br/></div>
+        <div class="select_B">
+            <input type="button" onclick="getDataB()" value="計算"/>
+            <br/>
+            <div id="output_B"></div>
+        </div>
+            
+        
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <script src="C_uncertainty.js"></script>
+    <div style="display: flex; flex-direction: column; align-items: center; ">
+        <div id="topic">組合不確定度計算</div>
+        <div style="display: flex; justify-content: center;">
+            
+        
+        <textarea  cols="40" rows="10" class="input" aria-label="Data" placeholder="請輸入A類和B類不確定度" id="data_C" style="width: 100%;"></textarea>
+        <br/></div>
+        <div>
+            <input type="button" onclick="changeModeC()" value="變更模式"/>
+            <input type="button" onclick="getDataC()" value="計算"/>
+            <br/>
+            <div id="output_C"></div>
+        </div>
+            
+        
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    </body>
+</html>

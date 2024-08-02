@@ -1,0 +1,9 @@
+.input {
+    width: 30%;
+}
+
+.select_B {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
